@@ -13,7 +13,7 @@ body{
   background-color: #323343;
   color: white;
   min-height: 100vh;
-  overflow: hidden;
+  //overflow: hidden;
   font-family: 'inter',sans-serif;
 }
 

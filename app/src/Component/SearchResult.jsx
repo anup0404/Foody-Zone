@@ -1,11 +1,11 @@
 import React from "react";
 import { styled } from "styled-components";
-import { BASE_URL, Button } from "../App";
+import { BASE_URL, Button, Container } from "../App";
 
 function SearchResult({ foodData }) {
   return (
     <FoodCardContainer>
-        
+        <Container>
         <FoodCards>
       {foodData?.map(({ image, name, text, price }) => (
         <FoodCard key={name}>
@@ -22,6 +22,7 @@ function SearchResult({ foodData }) {
         </FoodCard>
       ))}
       </FoodCards>
+      </Container>
       
       
     </FoodCardContainer>
@@ -30,7 +31,7 @@ function SearchResult({ foodData }) {
 
 export default SearchResult;
 const FoodCardContainer = styled.section`
-  height: calc(100vh);
+ min-height: calc(100vh);
   background-image: url("/bg.png");
 
   background-size: cover;
